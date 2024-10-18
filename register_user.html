@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Go service</title>
+        <meta name="Author" content="Pavel Tisnovsky">
+        <meta name="Generator" content="vim">
+        <style>
+        form  { display: table;      }
+        p     { display: table-row;  }
+        label { display: table-cell; padding: 5px; }
+        input { display: table-cell; }
+        </style>
+    </head>
+    <body>
+        <h1>Register new user</h1>
+        <form action="/register-new-user" method="post">
+            <p>
+                <label>Name:</label>
+                <input name="first_name" />
+            </p>
+            <p>
+                <label>Surname:</label>
+                <input name="surname" />
+            </p>
+            <p>
+                <button type="submit">Register</button>
+            </p>
+        </form>
+        <br />
+        <a href="/">Back</a>
+    </body>
+</html>
